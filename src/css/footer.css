@@ -1,0 +1,31 @@
+.footer-container {
+    width: 279px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*.footer-svg {
+
+}*/
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0d0b0a;
+}
+
+/*.form-fild {
+
+}*/
+
+/*.form-input {
+
+}*/
+
+/*.footer-link {
+
+}*/
