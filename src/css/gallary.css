@@ -1,0 +1,54 @@
+.section-gallary {
+  padding: 64px 0;
+}
+
+.title-gallary {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 20px;
+}
+
+.text-gallary {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 48px;
+}
+
+.list-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.item-gallary {
+  height: calc((100% - 24px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .section-gallary {
+    padding: 40px 0;
+  }
+
+  .title-gallary {
+    margin-bottom: 24px;
+  }
+
+  .text-gallary {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
