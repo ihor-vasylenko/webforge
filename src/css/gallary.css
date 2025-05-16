@@ -28,7 +28,7 @@
 .list-gallary {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 24px;
 }
 
@@ -50,5 +50,22 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1336px) {
+  .section-gallary {
+    padding: 112px 0;
+  }
+
+  .title-gallary {
+    font-size: 52px;
+  }
+
+  .text-gallary {
+    font-weight: 500;
+
+    margin-bottom: 80px;
+  }
+
+  .item-gallary {
+    width: calc((100% - 48px) / 3);
+  }
 }
