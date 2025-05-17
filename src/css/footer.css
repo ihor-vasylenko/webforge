@@ -1,5 +1,6 @@
 .footer {
-    background: #dfebeb;
+    padding: 48px 0;
+    background-color: #dfebeb;
 }
 
 .footer-container {
@@ -7,7 +8,7 @@
     border-radius: 16px;
     padding: 32px;
     width: 343px;
-    background: #f8fbfe;
+    background-color: #f8fbfe;
 }
 
 .footer-section {
@@ -44,7 +45,7 @@
     padding: 8px 12px;
     width: 279px;
     height: 42px;
-    background: rgba(13, 11, 10, 0.05);
+    background-color: rgba(13, 11, 10, 0.05);
 }
 
 .footer-button {
@@ -127,6 +128,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .footer {
+        padding: 40px 0;
+    }
+
     .footer-container {
         padding: 40px 32px;
         width: 768px;
@@ -158,9 +163,9 @@
     .footer-social {
         display: flex;
         flex-direction: column;
-            gap: 16px;
-            width: 300px;
-            height: 194px;
+        gap: 16px;
+        width: 300px;
+        height: 194px;
     }
 
     .footer-list-item {
@@ -169,6 +174,10 @@
 
 
 @media only screen and (min-width: 1336px) {
+    .footer {
+        padding: 64px 0;
+    }
+
     .footer-container {
         padding: 48px;
         width: 1312px;
