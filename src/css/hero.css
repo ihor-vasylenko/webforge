@@ -20,7 +20,7 @@
     margin-bottom: 24px;
 }
 
-.hero-join-item {
+.hero-join-item-mob {
     border: 1px solid #C2D9FC;
     border-radius: 100px;
     padding: 10px 24px;
@@ -29,6 +29,10 @@
     background: #C2D9FC;
     margin-bottom: 16px;
     text-align: center;
+}
+
+.hero-join-item {
+    display: none;
 }
 
 .hero-learn-item {
@@ -67,7 +71,19 @@
         flex-direction: row;
     }
 
+    .hero-join-item-mob {
+            display: none;   }
+
     .hero-join-item {
+        display: block;
+        border: 1px solid #C2D9FC;
+        border-radius: 100px;
+        padding: 10px 24px;
+        max-width: 329px;
+        height: 46px;
+        background: #C2D9FC;
+        margin-bottom: 16px;
+        text-align: center;
         width: 144px;
         margin-right: 16px;
     }
