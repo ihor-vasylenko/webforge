@@ -2,16 +2,22 @@
   <div class="container footer-container">
     <div class="footer-section">
       <svg class="footer-svg" width="83" height="23">
-        <use href="../img/sprite.svg#icon-company-logo"></use>
+        <use href="/img/sprite.svg#icon-company-logo"></use>
       </svg>
       <p class="footer-text">
         Subscribe to our newsletter for the latest updates on our yoga courses
         and events.
       </p>
-      <div class="form-fild">
-        <input class="form-input" type="email" />
-        <p class="footer-email">Your email here</p>
-        <button class="footer-button">Join</button>
+      <div class="footer-form-fild">
+        <input
+          class="footer-form-input"
+          type="email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Your email here"
+          name="user-email"
+        />
+        <button class="footer-button" type="submit">Join</button>
       </div>
       <p class="footer-subtext">
         By subscribing, you consent to our Privacy Policy and agree to receive
@@ -21,44 +27,44 @@
     <div class="footer-reference">
       <div class="footer-social">
         <h3 class="footer-zfgolov">Quick Links</h3>
-        <ul class="reference-list">
-          <li><a class="reference-anchor" href="#">Yoga Classes</a></li>
-          <li><a class="reference-anchor" href="#">Team</a></li>
-          <li><a class="reference-anchor" href="#">Pricing</a></li>
-          <li><a class="reference-anchor" href="#">Contacts</a></li>
+        <ul class="footer-list">
+          <li><a class="footer-anchor" href="#">Yoga Classes</a></li>
+          <li><a class="footer-anchor" href="#">Team</a></li>
+          <li><a class="footer-anchor" href="#">Pricing</a></li>
+          <li><a class="footer-anchor" href="#">Contacts</a></li>
         </ul>
       </div>
       <div class="footer-social">
         <h3 class="footer-zfgolov">Connect With Us</h3>
-        <ul class="reference-list-item">
-          <li class="reference-item">
-            <a class="reference-anchor-link" href="https://www.facebook.com/">
-              <svg class="reference-list-svg" width="24" height="24">
-                <use href="../img/sprite.svg#icon-facebook"></use>
+        <ul class="footer-list-item">
+          <li class="footer-item">
+            <a class="footer-anchor-link" href="https://www.facebook.com/">
+              <svg class="footer-list-svg" width="24" height="24">
+                <use href="/img/sprite.svg#icon-facebook"></use>
               </svg>
               Facebook</a
             >
           </li>
-          <li class="reference-item">
-            <a class="reference-anchor-link" href="https://www.instagram.com/">
-              <svg class="reference-list-svg" width="24" height="24">
-                <use href="../img/sprite.svg#icon-instagram"></use>
+          <li class="footer-item">
+            <a class="footer-anchor-link" href="https://www.instagram.com/">
+              <svg class="footer-list-svg" width="24" height="24">
+                <use href="/img/sprite.svg#icon-instagram"></use>
               </svg>
               Instagram</a
             >
           </li>
-          <li class="reference-item">
-            <a class="reference-anchor-link" href="https://www.linkedin.com/">
-              <svg class="reference-list-svg" width="24" height="24">
-                <use href="../img/sprite.svg#icon-linkedin"></use>
+          <li class="footer-item">
+            <a class="footer-anchor-link" href="https://www.linkedin.com/">
+              <svg class="footer-list-svg" width="24" height="24">
+                <use href="/img/sprite.svg#icon-linkedin"></use>
               </svg>
               LinkedIn</a
             >
           </li>
-          <li class="reference-item">
-            <a class="reference-anchor-link" href="https://www.youtube.com/">
-              <svg class="reference-list-svg" width="24" height="24">
-                <use href="../img/sprite.svg#icon-youtube"></use>
+          <li class="footer-item">
+            <a class="footer-anchor-link" href="https://www.youtube.com/">
+              <svg class="footer-list-svg" width="24" height="24">
+                <use href="/img/sprite.svg#icon-youtube"></use>
               </svg>
               YouTube</a
             >
@@ -66,6 +72,8 @@
         </ul>
       </div>
     </div>
-    <p class="footer-copyright">© 2025 Yoga Studio. All rights reserved.</p>
+    <p class="footer-copyright">
+      <span>&#169;</span> 2025 Yoga Studio. All rights reserved.
+    </p>
   </div>
 </footer>
