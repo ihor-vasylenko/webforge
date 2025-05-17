@@ -2,7 +2,7 @@
     padding: 64px 0;
     width: 100%;
 }
-.subtitle {
+.testimonials-subtitle {
     color: #0D0B0A;
    font-family:  "Cabin", sans-serif;
     font-weight: 400;
@@ -12,7 +12,7 @@
     text-align: center;
     margin-bottom: 20px;
 }
-.tagline {
+.testimonials-tagline {
     color: #0D0B0A;
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
@@ -53,19 +53,19 @@
     border-radius: 50%;
     margin-bottom: 16px;
 }
-.client-info {
+.testimonials-client-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.client-name {
+.testimonials-client-name {
     font-family: "Sarabun", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
 }
-.client-job {
+.testimonials-client-job {
     font-family: "Roboto",sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -75,19 +75,19 @@
 @media screen and (min-width:768px) {
     .testimonials {
         padding: 40px 0;   }
-    .subtitle {
+    .testimonials-subtitle {
         font-size: 40px;
         margin-bottom: 24px;
     }
 }
 @media screen and (min-width:1336px) {
     .testimonials {
-            padding: 112px 0;
+        padding: 112px 0;
         }
-        .subtitle {
-            font-size: 52px;
+    .testimonials-subtitle {
+        font-size: 52px;
         }
-        .testimonials-item {
-            width: calc((100% - 24px) / 2);
+    .testimonials-item {
+        width: calc((100% - 24px) / 2);
         }        
 }
