@@ -4,23 +4,23 @@
 
 .footer-container {
     border: 0px solid rgba(13, 11, 10, 0.15);
-        border-radius: 16px;
-        padding: 32px;
-        width: 343px;
-        background: #f8fbfe;
+    border-radius: 16px;
+    padding: 32px;
+    width: 343px;
+    background: #f8fbfe;
 }
 
 .footer-section {
     display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-svg {
     width: 84px;
-        height: 36px;
+    height: 36px;
 }
 
 .footer-text {
@@ -33,40 +33,41 @@
 
 .form-fild {
     position: relative;
-        display: flex;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-email {
     position: absolute;
-    padding-left: 8px;
+    padding: 8px 12px;
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-        color: rgba(13, 11, 10, 0.6);
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(13, 11, 10, 0.6);
 }
 
 .form-input {
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 12px;
-        padding: 8px 12px;
-        width: 279px;
-        height: 42px;
-        background: rgba(13, 11, 10, 0.05);
+    padding: 8px 12px;
+    width: 279px;
+    height: 42px;
+    background: rgba(13, 11, 10, 0.05);
 }
 
 .footer-button {
     border: 1px solid rgba(255, 255, 255, 0);
-        border-radius: 100px;
-        padding: 10px 24px;
-        width: 279px;
-        height: 46px;
-        background: rgba(13, 11, 10, 0.05);
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.6;
-        color: #0d0b0a;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 279px;
+    height: 46px;
+    background: rgba(13, 11, 10, 0.05);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #0d0b0a;
 }
 
 .footer-subtext {
@@ -87,9 +88,9 @@
 .footer-zfgolov {
     font-family: "Sarabun", sans-serif;
     font-weight: 600;
-        font-size: 16px;
-        line-height: 1.6;
-        color: #0d0b0a;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0d0b0a;
 }
 
 .reference-list {
@@ -102,9 +103,9 @@
 .reference-anchor {
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #0d0b0a;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #0d0b0a;
 }
 
 .reference-list-item {
@@ -113,16 +114,91 @@
 
 .reference-item {
     padding: 8px 0px;
+}
+
+.reference-anchor-link {
     display: flex;
     align-items: center;
     gap: 12px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #0d0b0a;
 }
 
 .footer-copyright {
     margin-top: 48px;
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #0d0b0a;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #0d0b0a;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        padding: 40px 32px;
+        width: 768px;
+    }
+
+    .footer-section {
+        gap: 24px; 
+    }
+
+    .form-fild {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-input {
+        width: 546px;
+    }
+
+    .footer-button {
+        width: 78px;
+    }
+
+    .footer-reference {
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+            gap: 16px;
+            width: 300px;
+            height: 194px;
+    }
+
+    .reference-list-item {
+        margin: 0;   }
+}
+
+
+@media only screen and (min-width: 1336px) {
+    .footer-container {
+        padding: 48px;
+        width: 1312px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-input {
+        width: 501px;
+    }
+
+    .footer-social {
+        width: 165px;
+    }
+
+    .footer-reference{
+        margin-left: 250px;
+    }
+
+    .footer-copyright {
+        margin: 0;
+    }
 }
