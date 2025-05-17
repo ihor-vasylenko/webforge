@@ -1,0 +1,128 @@
+.image-set-hero {
+    margin-bottom: 48px;
+}
+
+.hero-first-heading {
+    font-family: Sarabun;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #0D0B0A;
+    margin-bottom: 20px;
+}
+
+.hero-paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0D0B0A;
+    margin-bottom: 24px;
+}
+
+.hero-join-item-mob {
+    border: 1px solid #C2D9FC;
+    border-radius: 100px;
+    padding: 10px 24px;
+    max-width: 329px;
+    height: 46px;
+    background: #C2D9FC;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.hero-join-item {
+    display: none;
+}
+
+.hero-learn-item {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    padding: 10px 24px;
+    max-width: 329px;
+    height: 46px;
+    background: rgba(13, 11, 10, 0.05);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.hero-join-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0D0B0A;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-first-heading {
+            max-width: 436px;
+            margin-bottom: 16px;
+        }
+    
+    .hero-paragraf {
+            font-size: 18px;
+            max-width: 641px;
+            margin-bottom: 32px;
+        }
+
+    .hero-join-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-join-item-mob {
+            display: none;   }
+
+    .hero-join-item {
+        display: block;
+        border: 1px solid #C2D9FC;
+        border-radius: 100px;
+        padding: 10px 24px;
+        max-width: 329px;
+        height: 46px;
+        background: #C2D9FC;
+        margin-bottom: 16px;
+        text-align: center;
+        width: 144px;
+        margin-right: 16px;
+    }
+
+    .hero-learn-item {
+        width: 144px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1336px) {
+    .image-set-hero {
+            width: 1440px;
+            margin-bottom: 0;   
+        }
+    
+    .hero-text-wrapper {
+        display: flex;
+        gap: 24px;
+        padding: 80px 64px;
+    }
+
+    .hero-text-link-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-first-heading {
+        max-width: 644px;
+        margin-bottom: 16px;
+        font-size: 72px;
+    }   
+
+    .hero-join-item, .hero-learn-item {
+        margin-bottom: 0;
+    }
+
+    .hero-paragraf {
+        margin-bottom: 0;
+    }
+}
