@@ -1,9 +1,11 @@
+/* ========== БАЗОВИЙ КОНТЕЙНЕР (десктоп + моб) ========== */
 .container {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
+/* ========== HEADER ========== */
 .header-container {
   display: flex;
   align-items: center;
@@ -12,7 +14,7 @@
   height: 64px;
 }
 
-/* Бургер (зліва) */
+/* Бургер */
 .brg-button-wrapper {
   width: 113px;
   height: 24px;
@@ -27,10 +29,9 @@
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
-/* Логотип (по центру) */
+/* Логотип */
 .header-logo {
   position: absolute;
   left: 50%;
@@ -42,7 +43,7 @@
   justify-content: center;
 }
 
-/* Кнопка (праворуч) */
+/* Кнопка */
 .header-button-container {
   width: 113px;
   height: 35px;
@@ -66,7 +67,7 @@
 
 .header-btn:hover {
   background-color: rgba(13, 11, 10, 0.05);
-  border: 1px solid rgba(13, 11, 10, 0.05);
+  border-color: rgba(13, 11, 10, 0.05);
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
@@ -74,28 +75,25 @@
   font-family: 'Sarabun', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
   color: #0d0b0a;
 }
 
 .mobile-btn-text {
   display: inline;
 }
-
 .desktop-btn-text {
   display: none;
 }
 
-/* Навігація — прихована на мобілці */
+/* Навігація (прихована на мобілці) */
 .header-nav {
   display: none;
 }
-
 .nav-menu {
   display: none;
 }
 
-/* ========== TABLET (768px+) ========== */
+/* ========== TABLET ========== */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -125,24 +123,17 @@
   }
 }
 
-/* ========== DESKTOP (1336px+) ========== */
+/* ========== DESKTOP ========== */
 @media only screen and (min-width: 1336px) {
   .container {
     max-width: 1336px;
     padding: 0 12px;
   }
 
-  .header-container {
-    height: 72px;
-    justify-content: space-between;
-  }
-
-  /* Бургер зникає */
   .brg-button-wrapper {
     display: none;
   }
 
-  /* Навігація з'являється */
   .header-nav {
     display: flex;
     align-items: center;
@@ -168,24 +159,25 @@
     font-family: 'Sarabun', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.6;
     color: #0d0b0a;
     text-decoration: none;
   }
 
   .header-button-container {
     width: 278px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     padding-right: 64px;
   }
 
   .header-btn {
-    width: 105px;
     height: 40px;
   }
+}
+
+/* ================= MOBILE MENU ================= */
+.mobile-menu-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .mobile-menu {
@@ -195,8 +187,18 @@
   width: 100%;
   height: 100%;
   background-color: #f2fafa;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .mobile-menu-top {
   display: flex;
   align-items: center;
@@ -256,7 +258,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .mobile-menu-container {
     max-width: 768px;
     padding: 0 32px;
   }
