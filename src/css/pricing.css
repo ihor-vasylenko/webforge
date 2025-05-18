@@ -1,0 +1,243 @@
+.pricing-section {
+    background: #f4fafa;
+    text-align: center;
+}
+
+/* upper-part */
+
+.pricing-subtitle {
+    color: #0D0B0A;
+    font-family: Sarabun;
+    margin-bottom: 12px;
+        font-weight: 600;
+        line-height: 150%;
+        font-size: 16px;
+        text-align: center;
+}
+
+.pricing-title {
+    margin-bottom: 20px;
+    font-family: Cabin;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 1%;
+        text-align: center;
+}
+
+.pricing-paragraph {
+    font-family: Sarabun;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        margin-bottom: 48px;
+}
+
+.topside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* cards-and-information */
+
+.pricing-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.pricing-card {
+    background: #e5f3f2;
+    border-radius: 12px;
+    text-align: left;
+    width: 343px;
+    padding: 32px 24px;
+}
+
+.pricing-card-title {
+    font-family: Cabin;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 1%;
+        text-align: center;
+        color:#0D0B0A;
+        margin-bottom: 8px;
+}
+
+.pricing-card-price {
+    font-family: Cabin;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 120%;
+        letter-spacing: 1%;
+        text-align: center;
+        color: #0D0B0A;
+}
+
+.pricing-card-list {
+    margin: 0 0 32px 0;
+}
+
+.pricing-card-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+
+}
+
+.text-pricing-list {
+    font-family: Sarabun;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        color: #0D0B0A;
+}
+
+.pricing-card-btn {
+    background: #C2D9FC;
+    border: none;
+    padding: 10px 132.5px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+
+    font-family: Sarabun;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        color: #0D0B0A;
+}
+
+/* Tablet */
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    
+    .pricing-title {
+        font-size: 48px;
+    }
+
+    .pricing-paragraph {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .pricing-cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .pricing-card {
+        width: 340px;
+        padding: 32px 24px;
+        position: relative;
+    }
+
+    .topside {
+        margin-bottom: 32px;
+        align-content: center;
+    }
+
+    .pricing-card:nth-child(3) .topside {
+        width: 320px;
+        align-content: center;
+    }
+
+    .pricing-card:nth-child(3) {
+        width: 100%;
+        max-width: 704px;
+        margin: 0 auto; 
+        padding-top: 86px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 86px;
+        height: 383px;
+    }
+
+    .pricing-card-list{
+        margin: 0;
+    }
+
+    .pricing-card-title {
+        font-size: 22px;
+    }
+
+    .pricing-card-price {
+        font-size: 72px;
+    }
+
+    .besides-btn {
+        display: flex;
+        gap: 32px;
+    }
+
+        .pricing-card:nth-child(3) .pricing-card-btn {
+            width: 320px;
+            height: 46px;
+            position: absolute;
+            bottom: 110px;
+        }
+
+}
+
+@media(min-width: 1024px) {
+    
+    .pricing-title {
+        font-size: 52px;
+    }
+
+    .pricing-paragraph {
+        margin-bottom: 40px;
+    }
+
+    .pricing-cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .topside {
+        margin-bottom: 32px;
+    }
+
+    .pricing-card-list {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            padding: 20px;;
+            height: 509px;
+            min-height: 300px;
+        }
+
+    .pricing-card-btn {
+        position: relative;
+        margin-bottom: 32px;
+        height: 46px;
+        padding: 10px auto;
+        margin-top: auto;
+    }
+
+    /* .text-pricing-list {
+        font-family: Sarabun;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0%;
+    } */
+
+    
+}
