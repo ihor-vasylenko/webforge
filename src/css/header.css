@@ -161,6 +161,17 @@
     font-size: 16px;
     color: #0d0b0a;
     text-decoration: none;
+    position: relative;
+  }
+
+  .nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(13, 11, 10, 0.5);
   }
 
   .header-button-container {
@@ -174,12 +185,6 @@
 }
 
 /* ================= MOBILE MENU ================= */
-.mobile-menu-container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -190,8 +195,11 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms ease, visibility 250ms ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mobile-menu.is-open {
@@ -199,13 +207,22 @@
   visibility: visible;
   pointer-events: auto;
 }
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 375px;
+  padding: 0 16px;
+}
+
 .mobile-menu-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 16px;
-  position: relative;
-  margin-bottom: 16px;
+  padding: 14px 0;
+  width: 100%;
 }
 
 .mobile-close-btn {
@@ -217,6 +234,19 @@
   justify-content: center;
 }
 
+.mobile-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mobile-nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .mobile-nav-list {
   list-style: none;
   margin: 0;
@@ -224,7 +254,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 288px;
+  margin-top: 40px;
+  align-items: flex-start;
 }
 
 .mobile-nav-link {
@@ -233,14 +264,14 @@
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
+  text-decoration: none;
 }
 
 .mobile-btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
-  padding-bottom: 24px;
+  margin: 0 auto 24px auto;
   background-color: #c2d9fc;
   border: 1px solid #c2d9fc;
   border-radius: 100px;
@@ -263,9 +294,14 @@
     padding: 0 32px;
   }
 
+  .mobile-nav {
+    flex-grow: 0;
+    padding-bottom: 276px;
+  }
+
   .mobile-btn-container {
-    width: 204px;
-    height: 46px;
+    max-width: 205px;
+    margin: 0;
   }
 
   .mobile-button-text {
