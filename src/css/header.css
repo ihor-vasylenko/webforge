@@ -308,3 +308,17 @@
     display: inline;
   }
 }
+
+@media only screen and (min-width: 1336px) {
+  .container {
+    max-width: 1336px;
+    padding: 0 12px;
+  }
+
+  .mobile-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
