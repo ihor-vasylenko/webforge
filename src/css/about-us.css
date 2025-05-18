@@ -88,7 +88,7 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-    .container {
+    .container-about-us {
         padding: 40px 32px;
         margin: 0 auto;
         background-color: #f2fafa;
@@ -134,7 +134,7 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
-    .container {
+    .container-about-us {
         padding: 112px 64px;
         margin: 0 auto;
         background-color: #f2fafa;
