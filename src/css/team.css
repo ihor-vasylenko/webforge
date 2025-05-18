@@ -1,0 +1,115 @@
+
+.team {
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+}
+
+.team-meet {
+    font-family: Sarabun;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-title {
+    font-family: Cabin;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.team-text {
+    font-family: Sarabun;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-list-item {}
+
+.team-image {
+    border-radius: 4px;
+    display: block;
+    width: 421px;
+    height: 410px;
+}
+
+.team-item-cont {
+    max-width: 421px;
+
+}
+
+.team-item-title {
+    font-family: Sarabun;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.team-item-text {
+    font-family: Sarabun;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.text-description-team {
+    font-family: Sarabun;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.team-icon-list {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+.team-item-icon {
+    display: flex;
+    align-items: center;
+}
+
+.team-icon-link {
+    display: inline-block;
+
+}
+
+.team-icon {
+    width: 24px;
+    height: 24px;
+    stroke: black;
+    fill: black;
+}
