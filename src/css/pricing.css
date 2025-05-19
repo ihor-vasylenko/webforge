@@ -119,7 +119,7 @@
 
 /* Tablet */
 
-@media(min-width: 768px) and (max-width: 1335px) {
+@media(min-width: 768px) and (max-width: 1335.98px) {
     
     .pricing-section {
         padding: 40px 0;
@@ -195,7 +195,6 @@
 }
 
 @media(min-width: 1336px) {
-    
     .pricing-section {
             padding: 112px 0;
         }
@@ -218,6 +217,10 @@
         margin-bottom: 32px;
     }
 
+    .pricing-card-price {
+        font-size: 72px;
+    }
+
     .pricing-card-list {
         margin: 0;
         padding-left: 20px;
@@ -226,7 +229,6 @@
         .pricing-card {
             display: flex;
             flex-direction: column;
-            /* justify-content: space-between; */
             padding: 20px;;
             height: 509px;
             min-height: 300px;
