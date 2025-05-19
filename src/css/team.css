@@ -1,8 +1,6 @@
-
-.team {
-    padding-top: 112px;
-    padding-bottom: 112px;
-
+.section-team {
+    max-width: 375px;
+    padding: 64px 16px;
 }
 
 .team-meet {
@@ -10,9 +8,8 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .team-title {
@@ -22,8 +19,7 @@
     line-height: 120%;
     letter-spacing: 1%;
     text-align: center;
-    margin-bottom: 24px;
-
+    margin-bottom: 20px;
 }
 
 .team-text {
@@ -31,50 +27,46 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .team-list {
-    margin-top: 40px;
+    margin-top: 48px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 64px 24px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
     align-items: center;
+    justify-content: center;
 }
 
-.team-list-item {}
+.team-list-item {
+    max-width: 343px;
+    width: 100%;
+}
 
 .team-image {
-    border-radius: 4px;
-    display: block;
-    width: 421px;
-    height: 410px;
+    border-radius: 16px;
 }
 
 .team-item-cont {
-    max-width: 421px;
-
+    max-width: 100%;
 }
 
 .team-item-title {
     font-family: Sarabun;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .team-item-text {
     font-family: Sarabun;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: center;
 }
 
@@ -83,9 +75,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .team-icon-list {
@@ -93,8 +84,7 @@
     gap: 14px;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-
+    margin-top: 20px;
 }
 
 .team-item-icon {
@@ -104,7 +94,6 @@
 
 .team-icon-link {
     display: inline-block;
-
 }
 
 .team-icon {
@@ -112,4 +101,95 @@
     height: 24px;
     stroke: black;
     fill: black;
+}
+@media screen and (min-width: 768px) {
+    .section-team {
+        padding: 40px 32px;
+        margin: 0 auto;
+    }
+
+    .team-meet {
+        margin-bottom: 16px;
+    }
+
+    .team-title {
+        margin-bottom: 24px;
+    }
+
+    .team-text {
+        margin-bottom: 40px;
+    }
+
+    .team-item-cont {
+        max-width: 340px;
+    }
+
+    .team-item-title {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    .team-item-text {
+        font-size: 18px;
+    }
+
+    .text-description-team {
+        margin-top: 16px;
+    }
+
+    .team-icon-list {
+        margin-top: 24px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@media screen and (min-width: 1336px) {
+    .section-team {
+        padding: 112px 64px;
+        margin: 0 auto;
+    }
+
+    .team-item-cont {
+        max-width: 421px;
+    }
+
+    .team-title {
+        margin-bottom: 24px;
+    }
+
+    .team-text {
+        margin-bottom: 40px;
+    }
+
+    .team-item-title {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    .team-item-text {
+        font-size: 18px;
+    }
+
+    .text-description-team {
+        margin-top: 16px;
+    }
+
+    .team-icon-list {
+        margin-top: 24px;
+    }
+
+    .team-list-item {
+        width: calc((100% - 48px) / 3);
+    }
 }
