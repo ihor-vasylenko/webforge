@@ -1,4 +1,5 @@
 .pricing-section {
+    padding: 64px 0px;
     background: #f4fafa;
     text-align: center;
 }
@@ -118,8 +119,12 @@
 
 /* Tablet */
 
-@media(min-width: 768px) and (max-width: 1023px) {
+@media(min-width: 768px) and (max-width: 1335px) {
     
+    .pricing-section {
+        padding: 40px 0;
+    }
+
     .pricing-title {
         font-size: 48px;
     }
@@ -189,8 +194,12 @@
 
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1336px) {
     
+    .pricing-section {
+            padding: 112px 0;
+        }
+
     .pricing-title {
         font-size: 52px;
     }
@@ -221,6 +230,7 @@
             padding: 20px;;
             height: 509px;
             min-height: 300px;
+            width: 421.3px;
         }
 
     .pricing-card-btn {
@@ -230,14 +240,5 @@
         padding: 10px auto;
         margin-top: auto;
     }
-
-    /* .text-pricing-list {
-        font-family: Sarabun;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 160%;
-            letter-spacing: 0%;
-    } */
-
-    
+  
 }
