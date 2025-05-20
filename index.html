@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="images/svg+xml" href="/webforge/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebForge</title>
+    <title>YogaBloom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/webforge/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/webforge/assets/index-CM52WbsF.css">
+    <link rel="stylesheet" crossorigin href="/webforge/assets/index-CCZ9C0t-.css">
   </head>
   <body>
     <header class="header">
@@ -117,7 +117,7 @@
 
 
     <main>
-      <section>
+      <section class="section-hero">
   <div class="container">
     <div class="hero-image-wrapper">
       <picture>
@@ -154,11 +154,8 @@
         </p>
 
         <ul class="hero-join-list">
-          <li class="hero-join-item-mob btn-animation-first">
-            <a class="hero-join-item-link" href="#pricing">Join</a>
-          </li>
           <li class="hero-join-item btn-animation-first">
-            <a class="hero-join-item-link" href="#pricing">Join Now</a>
+            <a class="hero-join-item-link" href="#pricing">Join</a>
           </li>
           <li class="hero-learn-item btn-animation-second">
             <a class="hero-join-item-link" href="#gallary">Learn More</a>
@@ -182,7 +179,7 @@
       personal goals.
     </p>
     <ul class="yoga-classes-list">
-      <li>
+      <li class="yoga-classes-item">
         <picture>
           <source
             srcset="/webforge/assets/yoga-classes-1-desk-CGAS5ndZ.jpg 1x, /webforge/assets/yoga-classes-1-desk@2x-76yWLeqw.jpg 2x"
@@ -210,7 +207,7 @@
           Learn the basics of yoga in a supportive environment.
         </p>
       </li>
-      <li>
+      <li class="yoga-classes-item">
         <picture>
           <source
             srcset="/webforge/assets/yoga-classes-2-desk-BymjTnOb.jpg 1x, /webforge/assets/yoga-classes-2-desk@2x-JKoYXlAn.jpg 2x"
@@ -237,7 +234,7 @@
           Experience a dynamic sequence that connects breath and movement.
         </p>
       </li>
-      <li>
+      <li class="yoga-classes-item">
         <picture>
           <source
             srcset="/webforge/assets/yoga-classes-3-desk-CBCmRnBT.jpg 1x, /webforge/assets/yoga-classes-3-desk@2x-7tmYsIAq.jpg 2x"
@@ -265,12 +262,7 @@
         </p>
       </li>
     </ul>
-    <div class="yoga-classes-anchor-button btn-animation-first">
-      <a href="#pricing"
-        ><span class="yoga-classes-mobile-btn">Join</span>
-        <span class="yoga-classes-tab-desk-btn">Join now</span></a
-      >
-    </div>
+    <a href="#pricing" class="yoga-classes-button btn-animation-first">Join</a>
   </div>
 </section>
 
@@ -708,12 +700,7 @@
         </li>
       </ul>
     </div>
-    <div class="about-join-item btn-animation-first">
-      <a class="about-join-item-link" href="#pricing"
-        ><span class="text-about-mobile">Join</span>
-        <span class="text-about-desktop-tab">Join now</span></a
-      >
-    </div>
+    <a class="about-button btn-animation-first" href="#pricing">Join</a>
   </div>
 </section>
 
@@ -848,13 +835,15 @@
             <p class="text-pricing-list">Community support group</p>
           </li>
         </ul>
-        <button
-          class="pricing-card-btn btn-animation-first"
-          type="button"
-          data-modal1-open
-        >
-          Join
-        </button>
+        <div class="pricing-button-wrapper">
+          <button
+            class="pricing-card-btn btn-animation-first"
+            type="button"
+            data-modal1-open
+          >
+            Join
+          </button>
+        </div>
       </div>
 
       <!-- second card -->
@@ -883,13 +872,15 @@
             <p class="text-pricing-list">Community support group</p>
           </li>
         </ul>
-        <button
-          class="pricing-card-btn btn-animation-first"
-          type="button"
-          data-modal2-open
-        >
-          Join
-        </button>
+        <div class="pricing-button-wrapper">
+          <button
+            class="pricing-card-btn btn-animation-first"
+            type="button"
+            data-modal2-open
+          >
+            Join
+          </button>
+        </div>
       </div>
 
       <!-- third card -->
@@ -934,13 +925,15 @@
             </ul>
           </div>
         </div>
-        <button
-          class="pricing-card-btn btn-animation-first"
-          type="button"
-          data-modal3-open
-        >
-          Join
-        </button>
+        <div class="pricing-button-wrapper">
+          <button
+            class="pricing-card-btn btn-animation-first"
+            type="button"
+            data-modal3-open
+          >
+            Join
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -994,7 +987,11 @@
         <h3 class="footer-zfgolov">Connect With Us</h3>
         <ul class="footer-list-item">
           <li class="footer-item">
-            <a class="footer-anchor-link" href="https://www.facebook.com/">
+            <a
+              class="footer-anchor-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
               <svg class="footer-list-svg" width="24" height="24">
                 <use href="/webforge/assets/sprite-BoOt-8Rg.svg#icon-facebook"></use>
               </svg>
@@ -1002,7 +999,11 @@
             >
           </li>
           <li class="footer-item">
-            <a class="footer-anchor-link" href="https://www.instagram.com/">
+            <a
+              class="footer-anchor-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
               <svg class="footer-list-svg" width="24" height="24">
                 <use href="/webforge/assets/sprite-BoOt-8Rg.svg#icon-instagram"></use>
               </svg>
@@ -1010,7 +1011,11 @@
             >
           </li>
           <li class="footer-item">
-            <a class="footer-anchor-link" href="https://www.linkedin.com/">
+            <a
+              class="footer-anchor-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
               <svg class="footer-list-svg" width="24" height="24">
                 <use href="/webforge/assets/sprite-BoOt-8Rg.svg#icon-linkedin"></use>
               </svg>
@@ -1018,7 +1023,11 @@
             >
           </li>
           <li class="footer-item">
-            <a class="footer-anchor-link" href="https://www.youtube.com/">
+            <a
+              class="footer-anchor-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+            >
               <svg class="footer-list-svg" width="24" height="24">
                 <use href="/webforge/assets/sprite-BoOt-8Rg.svg#icon-youtube"></use>
               </svg>
