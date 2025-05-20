@@ -244,7 +244,7 @@
     padding: 32px;
     height: 509px;
     min-height: 300px;
-    width: 421.3px;
+    min-width: 421.3px;
   }
 
   .pricing-card-list {
