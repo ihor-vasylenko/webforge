@@ -37,6 +37,18 @@
   margin-bottom: 48px;
 }
 
+.yoga-classes-list {
+  margin-bottom: 48px;
+}
+
+.yoga-classes-list li:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.yoga-classes-item {
+  margin-bottom: 48px;
+}
+
 .yoga-classes-images {
   border-radius: 16px;
   margin-bottom: 24px;
@@ -61,37 +73,24 @@
   line-height: 160%;
   text-align: center;
   color: #0d0b0a;
-
-  margin-bottom: 48px;
 }
 
-.yoga-classes-anchor-button {
+.yoga-classes-button {
   font-family: 'Sarabun', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   color: #0d0b0a;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2d9fc;
   border: 1px solid #c2d9fc;
   border-radius: 100px;
   padding: 10px 24px;
-  background-color: #c2d9fc;
-
-  display: flex;
-  justify-content: center;
-}
-
-.yoga-classes-anchor-button a {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-
-  text-decoration: none;
-  color: #0d0b0a;
-}
-
-.yoga-classes-tab-desk-btn {
-  display: none;
+  max-width: 343px;
+  max-height: 46px;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,23 +144,10 @@
     display: none;
   }
 
-  .yoga-classes-anchor-button {
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    background-color: #c2d9fc;
-
+  .yoga-classes-button {
     margin: 0 auto;
-    width: fit-content;
-  }
-
-  .yoga-classes-mobile-btn {
-    display: none;
-  }
-
-  .yoga-classes-tab-desk-btn {
-    display: flex;
-    justify-content: center;
+    width: 110px;
+    height: 46px;
   }
 }
 
@@ -211,18 +197,5 @@
   .yoga-classes-title-images {
     font-size: 36px;
     margin: 24px;
-  }
-
-  .yoga-classes-anchor-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 10px 24px;
-    background-color: #c2d9fc;
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-
-    margin: 0 auto;
   }
 }

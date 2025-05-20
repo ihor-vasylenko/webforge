@@ -1,6 +1,6 @@
 .pricing-section {
   padding: 64px 0px;
-  background: #f4fafa;
+  background-color: #f4fafa;
   text-align: center;
 }
 
@@ -51,10 +51,10 @@
 }
 
 .pricing-card {
-  background: #e5f3f2;
+  background-color: #e5f3f2;
   border-radius: 12px;
   text-align: left;
-  width: 343px;
+  max-width: 343px;
   padding: 32px 24px;
 }
 
@@ -99,18 +99,23 @@
   color: #0d0b0a;
 }
 
+.pricing-button-wrapper {
+  display: flex;
+}
+
 .pricing-card-btn {
-  background: #c2d9fc;
-  border: none;
-  padding: 10px 132.5px;
-  border-radius: 100px;
-  font-size: 16px;
-  cursor: pointer;
-  font-family: Sarabun;
+  font-family: 'Sarabun', sans-serif;
   font-weight: 500;
+  font-size: 16px;
   line-height: 160%;
-  letter-spacing: 0.01em;
   color: #0d0b0a;
+
+  width: 295px;
+  height: 46px;
+
+  background-color: #c2d9fc;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
 }
 
 /* Tablet */
@@ -179,10 +184,25 @@
   }
 
   .pricing-card:nth-child(3) .pricing-card-btn {
-    width: 320px;
-    height: 46px;
+    max-width: 320px;
+    max-height: 46px;
     position: absolute;
     bottom: 110px;
+  }
+
+  .pricing-card-btn {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0d0b0a;
+
+    width: 320px;
+    height: 46px;
+
+    background-color: #c2d9fc;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
   }
 }
 
@@ -227,11 +247,17 @@
     width: 421.3px;
   }
 
+  .pricing-card-list {
+    padding: 0;
+    margin-bottom: auto;
+  }
+
   .pricing-card-btn {
-    position: relative;
-    margin-bottom: 32px;
-    height: 46px;
-    padding: 10px;
-    margin-top: auto;
+    width: 357px;
+  }
+  .besides-btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
   }
 }
