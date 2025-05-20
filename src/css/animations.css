@@ -21,3 +21,80 @@ html {
   background-color: #fff;
   border-color: #fff;
 }
+
+.footer-anchor {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-anchor:hover, .footer-anchor:focus {
+  color: #C2D9FC;
+  font-weight: 500;
+}
+.footer-anchor-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-anchor-link:hover, .footer-anchor-link:focus {
+  color: #C2D9FC;
+  font-weight: 500;
+}
+
+.footer-list-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-anchor-link:hover .footer-list-svg, .footer-anchor-link:focus .footer-list-svg {
+  fill: #C2D9FC;
+}
+
+.nav-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #C2D9FC;
+  font-weight: 500;
+}
+
+.mobile-nav-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-link:hover, .mobile-nav-link:focus {
+  color: #C2D9FC;
+  font-weight: 500;
+}
+
+.mobile-btn-container {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-btn-container:hover, .mobile-btn-container:focus {
+  background-color: rgba(13, 11, 10, 0.05);
+  border-color: rgba(13, 11, 10, 0.05);
+}
+
+.brg-button-svg {
+  fill: #0D0B0A;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.brg-button:hover .brg-button-svg, .brg-button:focus .brg-button-svg {
+  fill: #f8fbfe;
+}
+.mobile-close-icon {
+  fill: #0D0B0A;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-close-btn:hover .mobile-close-icon, .mobile-close-btn:focus .mobile-close-icon{
+  fill: #f8fbfe;
+}
+.team-svg {
+  fill: #0D0B0A;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-socials-link:hover .team-svg, .team-socials-link:focus .team-svg{
+  fill: #0D0B0A26;
+}

@@ -20,8 +20,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 375px;
-    min-height: 720px;
+    width: 320px;
     border-radius: 16px;
     padding: 64px 16px;
     background-color: #DFEBEB;
