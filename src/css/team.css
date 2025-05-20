@@ -1,195 +1,157 @@
-.section-team {
-    max-width: 375px;
-    padding: 64px 16px;
+.team-section {
+  padding: 64px 0;
 }
 
-.team-meet {
-    font-family: Sarabun;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 12px;
+.team-subtitle {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 12px;
 }
 
 .team-title {
-    font-family: Cabin;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 120%;
-    letter-spacing: 1%;
-    text-align: center;
-    margin-bottom: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 20px;
 }
 
 .team-text {
-    font-family: Sarabun;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    text-align: center;
-    margin-bottom: 48px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 48px;
 }
 
 .team-list {
-    margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
-}
-
-.team-list-item {
-    max-width: 343px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .team-image {
-    border-radius: 16px;
+  margin-bottom: 20px;
+  border-radius: 16px;
 }
 
-.team-item-cont {
-    max-width: 100%;
+.team-title-image {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
 }
 
-.team-item-title {
-    font-family: Sarabun;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
-    text-align: center;
-    margin-top: 20px;
+.team-category-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 12px;
 }
 
-.team-item-text {
-    font-family: Sarabun;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    text-align: center;
+.team-image-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-bottom: 20px;
 }
 
-.text-description-team {
-    font-family: Sarabun;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    text-align: center;
-    margin-top: 12px;
+.team-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
-.team-icon-list {
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.team-item-icon {
-    display: flex;
-    align-items: center;
-}
-
-.team-icon-link {
-    display: inline-block;
-}
-
-.team-icon {
-    width: 24px;
-    height: 24px;
-    stroke: black;
-    fill: black;
-}
 @media screen and (min-width: 768px) {
-    .section-team {
-        padding: 40px 32px;
-        margin: 0 auto;
-    }
+  .team-section {
+    padding: 40px 0;
+  }
 
-    .team-meet {
-        margin-bottom: 16px;
-    }
+  .team-subtitle {
+    margin-bottom: 16px;
+  }
 
-    .team-title {
-        margin-bottom: 24px;
-    }
+  .team-title {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
 
-    .team-text {
-        margin-bottom: 40px;
-    }
+  .team-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 
-    .team-item-cont {
-        max-width: 340px;
-    }
+  .team-list {
+    flex-wrap: wrap;
+    gap: 24px;
+    flex-direction: row;
+  }
 
-    .team-item-title {
-        font-size: 22px;
-        margin-top: 24px;
-    }
+  .team-item-image {
+    width: calc(50% - 12px);
+  }
 
-    .team-item-text {
-        font-size: 18px;
-    }
+  .team-image {
+    margin-bottom: 20px;
+  }
 
-    .text-description-team {
-        margin-top: 16px;
-    }
+  .team-title-image {
+    font-size: 22px;
+  }
 
-    .team-icon-list {
-        margin-top: 24px;
-    }
+  .team-category-text {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
 
-    .team-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-        margin-top: 40px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .team-list-item {
-        width: calc((100% - 24px) / 2);
-    }
+  .team-image-text {
+    margin-bottom: 24px;
+  }
 }
+
 @media screen and (min-width: 1336px) {
-    .section-team {
-        padding: 112px 64px;
-        margin: 0 auto;
-    }
+  .team-section {
+    padding: 112px 0;
+  }
 
-    .team-item-cont {
-        max-width: 421px;
-    }
+  .team-list {
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    flex-direction: row;
+  }
 
-    .team-title {
-        margin-bottom: 24px;
-    }
+  .team-item-image {
+    width: calc((100% - 48px) / 3);
+  }
 
-    .team-text {
-        margin-bottom: 40px;
-    }
+  .team-image {
+    margin-bottom: 24px;
+  }
 
-    .team-item-title {
-        font-size: 22px;
-        margin-top: 24px;
-    }
-
-    .team-item-text {
-        font-size: 18px;
-    }
-
-    .text-description-team {
-        margin-top: 16px;
-    }
-
-    .team-icon-list {
-        margin-top: 24px;
-    }
-
-    .team-list-item {
-        width: calc((100% - 48px) / 3);
-    }
+  .team-socials {
+    margin: 0;
+  }
 }
