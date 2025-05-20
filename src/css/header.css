@@ -276,7 +276,8 @@
   border: 1px solid #c2d9fc;
   border-radius: 100px;
   padding: 10px 24px;
-  width: 343px;
+  width: 100%;
+  max-width: 343px;
   height: 46px;
 }
 
