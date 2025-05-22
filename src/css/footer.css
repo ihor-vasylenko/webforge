@@ -7,7 +7,6 @@
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
     padding: 32px;
-    width: 343px;
     background-color: #f8fbfe;
 }
 
@@ -32,27 +31,22 @@
     color: #0d0b0a;
 }
 
-.footer-form-fild {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .footer-form-input {
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 12px;
     padding: 8px 12px;
-    width: 279px;
+    width: 100%;
     height: 42px;
+    margin-bottom: 16px;
     background-color: rgba(13, 11, 10, 0.05);
+    outline: transparent;
 }
 
 .footer-button {
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 100px;
     padding: 10px 24px;
-    width: 279px;
+    width: 100%;
     height: 46px;
     background: rgba(13, 11, 10, 0.05);
     font-size: 16px;
